@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const url = "mongodb+srv://japar84330_db_user:5Sg99Hs13ZwvjzyV@cluster0.yo1zamc.mongodb.net/?appName=Cluster0";
+const url = process.env.MONGODB_URL;
 const dbName = "food-app";
 
 const connect = async ()=>{
